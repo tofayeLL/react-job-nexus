@@ -1,6 +1,8 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { savJobApplicationToLs } from "../../utility/localstorage";
+
 
 
 
@@ -16,7 +18,8 @@ const JobDetails = () => {
 
 
     const handleApplyNow = () => {
-        
+        // saveJobApplication(id);
+       savJobApplicationToLs(id)
         toast.success("Yo have applied successfully")
 
     }
