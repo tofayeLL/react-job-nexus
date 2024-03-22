@@ -31,6 +31,7 @@ const FeaturedJobs = () => {
                 }
 
             </div>
+            
             <div className={`flex justify-center items-center
             ${dataLength === jobs.length ? 'hidden' : ''}
             my-8`}>
