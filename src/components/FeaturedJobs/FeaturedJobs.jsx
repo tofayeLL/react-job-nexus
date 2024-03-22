@@ -21,7 +21,7 @@ const FeaturedJobs = () => {
             </div>
             
             {/* card container or single job container */}
-            <div>
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
                 {
                     jobs.map((job, index) => <Job
                      job={job}
