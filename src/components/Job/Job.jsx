@@ -1,24 +1,27 @@
-
+import { CiLocationOn } from "react-icons/ci";
+import { HiOutlineCurrencyDollar } from "react-icons/hi2";
 const Job = ({ job }) => {
     const { id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information, phone, email, address } = job
     return (
         <div >
             <div className="bg-base-100 shadow-xl rounded-lg ">
-                <figure className="p-10">
+                <figure className="p-6">
                     <img src={logo} alt="logo" className="rounded-xl" />
                 </figure>
-                <div className="p-10 space-y-4">
+                <div className="p-6 space-y-4">
                     <h2 className="card-title">{job_title}</h2>
                     <p>{company_name}</p>
                     <div className="flex  items-center gap-6">
                         <button className="text-[#9576ff] px-4 py-2 border-[1px] border-[#9576ff] rounded-md font-semibold">{remote_or_onsite}</button>
                         <button className="text-[#9576ff] px-4 py-2 border-[1px] border-[#9576ff] rounded-md font-semibold">{job_type}</button>
                     </div>
-                    <div>
+                    <div className="flex  items-center gap-6">
+                        <p className="flex items-center gap-2" ><span> <CiLocationOn></CiLocationOn></span> {location}</p>
+                        <p className="flex items-center gap-2" ><span> <HiOutlineCurrencyDollar></HiOutlineCurrencyDollar> </span> {salary}</p>
 
                     </div>
                     <div className="card-actions">
-                        <button className="btn bg-[#9576ff]">View Details</button>
+                        <button className="btn text-white bg-gradient-to-r from-[#7e90fe] to-[#9873FF]">View Details</button>
                     </div>
                 </div>
             </div>
