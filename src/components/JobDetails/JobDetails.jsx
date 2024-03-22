@@ -19,7 +19,7 @@ const JobDetails = () => {
 
     const handleApplyNow = () => {
         // saveJobApplication(id);
-       savJobApplicationToLs(id)
+       savJobApplicationToLs(parseInt(id))
         toast.success("Yo have applied successfully")
 
     }

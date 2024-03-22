@@ -17,7 +17,7 @@ const savJobApplicationToLs = (id) => {
 
 }
 
-export { savJobApplicationToLs }
+export { savJobApplicationToLs, getStoredJobApplication }
 
 
 
